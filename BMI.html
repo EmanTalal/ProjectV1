@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewPort" content="width=device-width , initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="text-align: center; background-color:rgb(163, 239, 163)">
+            <div>
+                <h3>weight</h3>
+                <input type="text" id="weigth-input">
+            </div>
+
+            <div>
+                <h3>height</h3>
+                <input type="text" id="height-input">
+            </div>
+
+            <button id="submit-btn">calculate</button>
+
+            <div>
+                <h4 id="bmi"> </h4>
+                <h4 id="bmi-catego"> </h4>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.getElementById("submit-btn").addEventListener("click",function() {
+        var weight=document.getElementById("weigth-input").value
+        var height=document.getElementById("height-input").value
+
+        var bmi=weight/(height*height)
+        document.getElementById("bmi").innerHTML=bmi
+            console.log(bmi)
+
+            if(bmi<18){
+                document.getElementById("bmi-catego").innerHTML="slim"
+            }else if( bmi<24.9){
+                document.getElementById("bmi-catego").innerHTML="perfect"
+            }else if( bmi<29.9){
+                document.getElementById("bmi-catego").innerHTML="Overweight"
+            }else if( bmi<34.9){
+                document.getElementById("bmi-catego").innerHTML="First class obesity"
+            }else if( bmi<39.9){
+                document.getElementById("bmi-catego").innerHTML="Second degree obesity"
+            }else{
+                document.getElementById("bmi-catego").innerHTML="Dangerous obesity  "
+            }
+            
+            
+
+
+        })
+    </script>
+</html>

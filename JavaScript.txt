@@ -1,0 +1,222 @@
+javaScripd
+First 
+عندي دالة مهمه جدا وهي تظهر فقط للمبرمج اليوزر مايشوفها
+onsole.log("Eman")
+-----
+Variables in JS
+var x = 20   --> Varibales
+x=40;  ---> updata
+console.log(x)  --> Out=20,, Now out=40
+----
+name of Variable and How i can Deal With it!
+1)مقدر استخدم الكلمات المحجوزه 
+2)لازم يبدا بالحرف 
+--------------
+Operation !
+console.log(10+10) -->output=20; 
+var x=100+200
+console.log(x)
+
+var z=30-10 
+var y=8+40
+ console.log(z*y)
+
+//incresing 
+var e=20
+e++
+or 
+e+=1
+console.log(e)
+
+var p="hello"
+console.log(p + " World")
+
+///
+type of data
+String  ""
+Number -->any number , integer flot double
+
+var title="ILOVE YOU! "
+console.log(title.substring(0, 7))
+
+var tit="EMan Talal"
+console.log(tit.length) 
+
+var name="nouf"
+console.log(name.toUpperCase()) --> OUTPUT=NOUF
+
+var name2="NONE"
+console.log(name2.toLocaleLowerCase())
+
+var name3="back to"
+console.log(name3.replace("b","s"))
+
+var title="Hello World"
+var titleLowerCases=title.toLocaleLowerCase()
+console.log(titleLowerCases.replace("Hello","r"))
+
+
+var name5="hello World"
+var myChar=name5.charAt(3)
+ console.log(typeof myChar)
+
+ var name6="Eman Talal"
+ console.log(name6[3] )
+
+
+var firstname="Mona"
+var lastname="Talal"
+console.log(firstname+ " "+ lastname)
+
+var x=10
+var y=20
+var z=y*x
+console.log(z)
+
+---------------
+Boolean
+{true,false}
+
+logical Operation
+==
+<=
+>=
+<
+> 
+!=
+var x=7
+var y=10
+console.log( x<3 || x>10 || y==10)
+console.log(x> 5 && x <15 && x<12 && y>7)
+var z=x<3 || x>10 || y !=10
+console.log(!z)
+---------
+//Comments
+// 
+
+/*
+	Big Comments
+
+*/
+
+-----------------
+Casting ..
+var x="10"
+var y="20"
+console.log(Number(x)+Number(y))
+var a=10
+var b=20
+console.log(x.toString()+y)
+
+var o=10
+var s=20
+console.log(Boolean(x))
+
+---------------------
+if Statements
+
+var age = 70
+if(age>=100){
+ console.log(" Old and the age is :"+ age)
+}else{
+ console.log("Young")
+}
+//Multi if
+var age = 40
+if(age>=60){
+console.log(" Old and the age is :"+ age)
+}else if(age>=40){
+console.log(" Mid and the age is :"+ age)
+}else {
+console.log(" Young and the age is :"+ age)
+}
+
+console.log("Done")
+
+//Switch - Case 
+ switch(health){
+case("Strong"):
+console.log("Your health is Good")
+break
+case("week"):
+console.log("Your need to work on you health ")
+break
+default:
+console.log("Good")
+}
+
+-----------
+Arrays.
+var arraystrudents = ["Eman" , "Maha" , "Mohamed" , "Omar"]
+arraystrudents.push("Sami")
+arraystrudents[1]="Mona"
+document.getElementById("students").innerHTML=arraystrudents
+console.log( arraystrudents)
+console.log( arraystrudents[2])
+arraystrudents.pop()
+console.log( arraystrudents)
+
+---
+Arrays Operations 
+var arraystrudents = ["Eman" , "Maha" , "Mohamed" , "Omar" , "Mone"]
+        arraystrudents.push("Sami")
+        arraystrudents[1]="Mona"
+        document.getElementById("students").innerHTML=arraystrudents
+        console.log( arraystrudents)
+        console.log( arraystrudents[2])
+        arraystrudents.pop()
+console.log( arraystrudents)
+console.log( arraystrudents)
+arraystrudents.splice(3,1) //Delet
+console.log( arraystrudents)
+arraystrudents.splice(1,1,"Bodi") //Delet
+console.log( arraystrudents)
+arraystrudents.splice(2,0 ,"Noual") //Delet
+
+ console.log( arraystrudents)
+
+---------------
+Arrays Function
+var str=""
+ var arr=[10,100,50,40,90,20,70]
+console.log(arr.includes(20))  //True
+console.log(arr.includes(30))  //False
+console.log( Array.isArray(arr)) //true
+console.log( Array.isArray(str)) //False
+console.log(arr.indexOf(50)) //2 
+console.log(arr.indexOf(20))//6
+console.log(arr.indexOf(700)) //-1 , not exist
+
+console.log(arr)
+arr.unshift(400)
+arr.shift()
+console.log(arr)
+arr.reverse()
+console.log(arr)
+------------------
+Loop
+for(var i =0; i<=100; i++){
+ console.log("hello")
+}
+
+Array With Loop!
+ var school=["T.Eman", "T.TALAL" , "Maha" , "Bodi"]
+for(var memberIndex=0; memberIndex<school.length; memberIndex++){
+if (school[memberIndex][0]=="T"){
+ document.getElementById("school").innerHTML +=school[memberIndex]+ "<br>  "
+
+ }
+-----------
+
+
+
+
+
+
+
+
+
+
+
+
+

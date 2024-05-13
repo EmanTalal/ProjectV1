@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewPort" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center ;font-size: 50px;">
+        <div>
+            Find Student
+            <br>
+            <input type="text" id="student-input">
+            <button id="search">search</button>
+        </div>
+        <div id="school" style="font-size: 20px"> </div>
+        <h2 id="result"></h2>
+    </div>
+</body>
+
+<script>
+    var school = ["Yarob", "Ahmad", "Khaled", "Omar", "Jaber", "Sami", "Salem"]
+    for (var memberIndex = 0; memberIndex < school.length; memberIndex++) {
+        document.getElementById("school").innerHTML += school[memberIndex] + " , "
+    }
+    document.getElementById("search").addEventListener("click", function() {
+        var name = document.getElementById("student-input").value.toLowerCase()
+
+        var isFound = false
+
+        for (var student of school) {
+
+            var loweredstudent = student.toLowerCase()
+            if (name == loweredstudent) {
+                isFound = true
+            }
+        }
+        if (isFound == true) {
+            document.getElementById("result").innerHTML = name + " iS in the School"
+
+        } else {
+            document.getElementById("result").innerHTML = name + " iS NOT in the School"
+        }
+    })
+</script>
+
+</html>
